@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>
+        Whatever you want
+    </title>
+    <script>
+        function changeFunction() {
+            var gumption = document.getElementById("change")
+            gumption.innerText = "gumption"
+            document.getElementById("change").innerText = 'gumption';
+        }
+        function deleteFunction() {
+            var yeonjun = document.getElementById("change")
+            yeonjun.innerText = ""
+        }
+        function addStuff() {
+            var grabdiv = document.getElementById("change");
+            var typedcontent = document.getElementById("hello").value
+            var colorcontent = document.getElementById("yang").value
+            grabdiv.innerHTML = typedcontent;
+            grabdiv.style = "color: " + colorcontent;
+        }
+        function changeColor() {
+            var grabcolor = document.getElementById("change");
+            var colorcontent = document.getElementById("yang").value
+            grabcolor.innerHTML = colorcontent
+        }
+    </script>
+</head>
+
+<body>
+    <div id="change">
+        anything
+    </div>
+    <button onclick="changeFunction()">
+        add
+    </button>
+    <button onclick="deleteFunction()">
+        delete
+    </button>
+    <button onclick="addStuff()">
+        whatever you want to call it
+    </button>
+    <button onclick="changeColor()">
+        YANGGGGG
+    </button>
+    <input id= "hello" type="text">
+    <input id= "yang" type="color">
+</body>
+
+</html>
